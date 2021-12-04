@@ -22,7 +22,7 @@ public class Dice {
     }
 
 // a method to calculate the sum of dice after several toss
-    public Integer sumOfToss () {
+    public Integer tossAndSum () {
         Random rand = new Random();
         int min = 1;
         int max = 6;
