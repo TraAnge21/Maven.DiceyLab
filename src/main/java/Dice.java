@@ -2,40 +2,36 @@ import java.util.Random;
 
 public class Dice {
 
-    // a number of N random-tossed dies.
- private Integer numOfDice;
+    private final Integer numofDices;
+    private Random rand = new Random();
 
-// constructor
-    public Dice(Integer numOfDice) {
-        this.numOfDice = numOfDice;
-
+    // constructor
+    public Dice(Integer numofDices) {
+        this.numofDices = numofDices;
     }
 
-    // getter
-    public Integer getNumOfDice() {
-        return numOfDice;
-    }
 
-    // setter
-    public void setNumOfDice(Integer numOfDice) {
-        this.numOfDice = numOfDice;
-    }
+    public Integer sumofToss() {
 
-// a method to calculate the sum of dice after several toss
-    public Integer tossAndSum () {
-        Random rand = new Random();
-        int min = 1;
-        int max = 6;
-        Integer sumTossDice =0;
+        int sumTossDice = 0;
         // random toss of dice and their sum
-        for (int j = 1; j <= numOfDice ; j++) {
-            sumTossDice+= rand.nextInt(max-min+1)+1;
+        for (int j = 1; j <= numofDices; j++) {
+            sumTossDice += rand.nextInt(6) + 1;
 
         }
         return sumTossDice;
 
-
     }
-
-
 }
+
+
+
+
+
+
+
+
+
+
+
+
