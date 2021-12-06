@@ -11,6 +11,7 @@ public class Dice {
     }
 
 
+
     public Integer sumofToss() {
 
         int sumTossDice = 0;
