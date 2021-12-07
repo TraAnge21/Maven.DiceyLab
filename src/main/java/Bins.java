@@ -34,6 +34,7 @@ private HashMap<Integer, Integer> resultsBins;
     }
 
 
+   // increment similar to mappingBins java update map value
 
 
 
