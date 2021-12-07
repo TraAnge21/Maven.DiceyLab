@@ -1,5 +1,42 @@
+import java.util.ArrayList;
+import java.util.HashMap;
 
 public class Bins {
+
+private Integer lowerValue;
+private Integer upperValue;
+private HashMap<Integer, Integer> resultsBins;
+
+    // Constructor
+    public Bins (Integer lowerValue, Integer upperValue ) {
+        this.lowerValue=lowerValue;
+        this.upperValue=upperValue;
+        this.resultsBins= new HashMap<Integer, Integer>();
+        mappingBins();
+    }
+
+    // getter
+    public Integer getBins (Integer binNumber) {
+
+        return resultsBins.get(binNumber);
+
+    }
+
+
+    // create a map
+    public HashMap<Integer, Integer> mappingBins () {
+
+        for ( int j = lowerValue; j <= upperValue ; j++ ){
+            resultsBins.put(j,0);
+        }
+
+        return resultsBins;
+    }
+
+
+
+
+
 
 
 
